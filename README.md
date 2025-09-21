@@ -1,1 +1,1 @@
-# odin-landing-page
+A simple landing page website using HTML and CSS in courtesy to the curriculum of The Odin Project.
