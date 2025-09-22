@@ -1,0 +1,273 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+    height: 80px;
+    width: 70px;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;  
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Roboto', arial;
+}
+
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1 1 400px; /* grow, shrink, basis */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 280px;
+}
+
+.hero-subtext {
+    font-family: 'Roboto', arial;
+    opacity: 0.7;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-text h1 {
+    font-size: clamp(28px, 6vw, 48px);
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+.btn-signup {
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #3882f6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.btn-signup:hover {
+  background-color: #2563eb;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* ===== INFO SECTION ===== */
+.info {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.info-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  margin-bottom: 40px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.card-img {
+  display: block;
+  margin: 0 auto 15px;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+  width: 200px;    
+  height: 200px; 
+  object-fit: cover; /* makes image fill box without distortion */
+}
+
+
+
+/* ===== QUOTE SECTION ===== */
+.quote {
+  background-color: #E5E7EB;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.quote-text p {
+  font-size: clamp(20px, 4vw, 36px);
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1F2937;
+}
+
+
+/* ===== CTA SECTION ===== */
+.cta {
+  padding: 60px 20px;
+}
+
+.cta-box {
+  background-color: #3882F6;
+  color: #fff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-text {
+  flex: 1 1 300px;
+}
+
+.cta-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-text p {
+  font-size: 18px;
+}
+
+.btn-cta {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.btn-cta:hover {
+  background-color: #fff;
+  color: #3882F6;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 900px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .hero-image {
+    order: -1; /* stack image above text */
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    justify-content: center;
+    padding: 20px 0 0;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-cta {
+    width: 100%;
+  }
+}
